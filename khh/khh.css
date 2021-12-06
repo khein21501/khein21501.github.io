@@ -1,0 +1,103 @@
+.navbar{
+    overflow: hidden;
+  
+    border: 0px;
+    margin: 0px;
+    
+   
+    
+    
+    
+}
+.navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white
+}
+.navbar a.active {
+    background-color: white;
+    
+    
+    color: white;
+}
+.navbar a:hover {
+    background-color: rgb(250, 250, 250)  ;
+    opacity: 40%;
+    color: black;
+}
+
+.background {
+    background-image: url(image/bagan4.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    opacity: 70%;
+    
+}
+.container{
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+.title{ 
+        
+        background-image: url(image/header.jpg);
+        opacity: 80%;
+        height: 350px;
+        padding: 30px;
+        border: 0px;
+        opacity: 50%    ;
+
+        
+}
+.header{
+    font-family: monospace;
+    text-align: center;
+    font-size: 30px;
+    padding: 0px;
+    margin-top: 0px;
+    letter-spacing: 3px;
+   
+    
+
+}
+.contect{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.background2{
+    background-image: url(image/bagan1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    opacity: 70%;
+    
+}
+.foot{
+    padding: 30px; 
+    border: 0px;
+    margin: 0px;
+    background-color: ;
+    opacity: 60%;
+    
+    font-size: 20px;
+    text-align: center;
+}
+.foot a{
+    text-decoration: none;
+}
