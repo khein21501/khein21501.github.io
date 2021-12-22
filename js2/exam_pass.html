@@ -10,7 +10,7 @@
 
         <center>
             <table border="0" cellpadding="0" cellspacing="10">
-                <form action="result.php" method="post"></form>
+                <form name="myForm" method="post">
                 <thead>
                     <tr>
                         <td colspan="2" align="center"><h1>Exam Result</h1></td>
@@ -30,12 +30,33 @@
                         <td><input type="text" name="js" id="js" placeholder="Enter JavaScript Mark" required></td>
                     </tr>
                     <tr>
-                        <td colspan="2" align="center"><button type="submit">Result</button></td>
+                        <td colspan="2" align="center"><button type="button" onclick="result()">Result</button></td>
                     </tr>
                 </tbody>
-                
+                    </form>
             </table>
         </center>
-    
+    <script>
+        function result(){
+            let turboc = document.myForm.turboc.value;
+            console.log(turboc);
+            let java = document.myForm.java.value;
+            console.log(java);
+            let js = document.myForm.js.value;
+            console.log(js);
+
+          if (turboc >80 || java >80 || js >80) {
+              document.write("<h1>This Student get D</h1>");
+              
+          } else if(turboc >= 50 && java >= 50 && js >= 50){
+              document.write("<h1>This Student is pass</h1>");
+              
+          } else{
+              document.write("<h1>This student is failed</h1>");
+          }
+        }
+       
+    </script>
+
 </body>
 </html>
