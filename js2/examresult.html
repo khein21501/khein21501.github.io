@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        <center>
+            <table border="0" cellpadding="0" cellspacing="10">
+                <form  name="khh">
+                <thead>
+                    <tr>
+                        <td colspan="2" align="center"><h1>Exam Result</h1></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label for="turboc">Turbo C</label></td>
+                        <td><input type="number" name="turboc" id="turboc" placeholder="Enter Turbo C Mark" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="jv">JAVA</label></td>
+                        <td><input type="number" name="jv" id="jv" placeholder="Enter JAVA Mark" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="js">JavaScript</label></td>
+                        <td><input type="number" name="js" id="js" placeholder="Enter JavaScript Mark" required=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><button type="submit" onclick="result()">Result</button></td>
+                    </tr>
+                </tbody>
+                </form>
+            </table>
+        </center>
+        <script>
+            function result() {
+                let c = document.khh.turboc.value;
+                console.log(c);
+
+                let java = document.khh.jv.value;
+                console.log(java);
+
+                let jasc = document.khh.js.value;
+                console.log(jasc);
+
+                if( c < 50 || java < 50 || jasc < 50){
+                    document.write("fail");
+                }else if ( c > 80 || java || 80 && jasc || 80){
+                    document.write("D");
+                }else{
+                    document.write("Pass");
+                }
+
+
+                
+            }
+        </script>
+    
+    
+      
+     
+   
+</body>
+</html>
