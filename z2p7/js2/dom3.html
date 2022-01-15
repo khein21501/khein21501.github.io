@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Css Dom</h1>
+    <button type="button" onclick="move()">move</button>
+    <img src="javascript8_1.png" alt="" id="img" width="300" height="300">
+    <br><br>
+    <img src="dom-tutorial.webp" alt="" id="image" width="300" height="300" onmouseover="big()" onmouseout="normal()">
+    <script>
+        function move() {
+            let img = document.querySelector('#img')
+           
+            if (img) {
+                let img = document.querySelector('#img')
+                img.style.width = '300px';
+                img.style.height= '300px';
+            } else {
+                let img = document.querySelector('#img')
+                img.style.width = '500px';
+                img.style.height= '500px';
+            }
+        }
+
+        function big() {
+            let image = document.querySelector('#image');
+            image.style.width = "600px"
+            image.style.height= "600px"
+        }
+
+        function normal() {
+            let image = document.querySelector('#image');
+            image.style.width = "300px"
+            image.style.height= "300px"
+        }
+    </script>
+</body>
+</html>

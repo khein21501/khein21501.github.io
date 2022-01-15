@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="dataName" name="name">
+    <br><br>
+    <input type="text" id="dataAge" name="age">
+    <br><br>
+    <button type="button" onclick="addData()">Add</button>
+    <table border="1" cellspacing = "0" cellpadding = '20'>
+        <thead>
+            <tr>
+                <th>NO</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+    <script>
+          i = 1;
+        function addData() {
+
+            
+           let myname = document.querySelector("#dataName").value;
+           console.log(myname);
+           let myage  = document.querySelector("#dataAge").value;
+           console.log(myage);
+
+          
+          
+         
+            let tbody = document.querySelector("#tbody");
+         
+            tbody.innerHTML += `<tr>
+                    <td>${i++}</td>
+                    <td>${myname}</td>
+                    <td>${myage}</td>
+                </tr>`
+           
+
+           
+
+            
+
+
+            
+
+        }
+    </script>
+</body>
+</html>

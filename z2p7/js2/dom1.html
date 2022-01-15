@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Domm Selector</h1>
+    <h3 id="lg">Language</h3>
+    <p class="lang">HTML</p>
+    <p class="lang">Java Script</p>
+    <h5 class="lang">Css</h5>
+    <h1 id="add"></h1>
+    <p id="add1"></p>
+    
+
+    <button onclick="language()">Click</button>
+
+    <script>
+        function language() {
+            let heading = document.getElementById('heading');
+            console.log(heading);
+
+             let lg = document.getElementById('lg').innerHTML;
+             console.log(lg);
+
+             let add = document.getElementById('add');
+             let add1 = document.getElementById('add1');
+             add.innerHTML = '<i>This is innerHtml</i>';
+             add1.innerText = '<i>This is innertext</i>';
+            
+            let lang = document.getElementsByClassName('lang');
+            console.log(lang[2].innerHTML);
+
+            let lang2 = document.getElementsByTagName('p');
+            console.log(lang2);
+            console.log(lang2[1].innerText);
+
+            let q_lang = document.querySelector('#lg').innerHTML;
+            console.log(q_lang);
+
+            let q_lang2 = document.querySelector('.lang').innerHTML;
+            console.log(q_lang2);
+
+            let name  = document.querySelector('p').innerHTML;
+            console.log(name);
+        }
+        
+    </script>
+
+</body>
+</html>

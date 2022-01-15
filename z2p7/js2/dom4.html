@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">name</label>
+    <input type="text" id="dataName">
+    <label for="">age</label>
+    <input type="text" id="dataAge">
+    <br><br>
+    <button type="button" onclick="addData()">Add</button>
+    <br><br>
+    <table border="1" cellspacing = "0" cellpadding = '20'>
+        <thead>
+            <tr>
+                <th>NO</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+
+    </table>
+    <br><br>
+  
+    <script>
+        function addData() {
+            let name = document.querySelector("#dataName").value;
+            let age  = document.querySelector("#dataAge").value;
+            console.log(name);
+            console.log(age);
+            let data  = [
+                {name : `${name}`, age : `${age}`}
+            ]
+            console.log(data);
+            i = 1;
+            
+            
+            let tbody = document.querySelector("#tbody");
+            tbody += `<tr>
+                    <td>${i++}</td>
+                    <td>${name}</td>
+                    <td>${age}</td>
+                </tr>`
+        }
+           
+        
+    </script>
+</body>
+</html>

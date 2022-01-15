@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+body{
+    background-color: gray;
+
+}
+
+form{
+    width: 80%;
+    margin: auto;
+}
+
+input[type= "text"], input
