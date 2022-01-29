@@ -1,0 +1,19 @@
+.border1{
+    border: 1px solid black;
+}
+.border2{
+    border-bottom: 2px solid red;
+}
+.borderstyle{
+    border-style: solid;
+    border-style: double;
+}
+.borderwidth{
+    border-width: 5px;
+    border-style: solid;
+}
+.margin{
+    margin: 40px;
+    border: 1px solid red;
+    
+}
