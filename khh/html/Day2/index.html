@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <link rel="icon" href="image/logo.jpg">
+    <link rel="stylesheet" href="day2.css">
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+            font: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+      
+        
+    </style>
+    
+    
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+      <div class="head">
+        <div id="navbar">
+            <a href="" target="https://pyithubawa.com/">Men</a>
+            <a href="" target="https://weclick4pdf.com/">Women</a>
+            <a href="" target="https://pyithubawa.com/">Kid</a>
+            <a href="" target="https://weclick4pdf.com/">Sale</a>
+            <a href="" target="https://pyithubawa.com/">Promo</a>
+            <input type="text" placeholder="Search..">
+        </di>
+       </div>
+    </header>
+    <!-- popular item -->
+    <div class="porpularbg">
+       <h2>POPULAR NOW</h2>
+        <div style="padding-left: 27.5%;padding-right: 25%;padding-bottom: 100px;">
+          <a href="">UltraBoot</a>
+          <a href="">NMD</a>
+          <a href="">Men Sport Shoes</a>
+          <a href="">Stan Smith</a>
+          <a href="">Slipper</a>
+        </div>
+        <!-- popular item phots -->
+       <div class="popularpt">
+        
+        
+           <img src="image/ptotect7.jpg" alt="" height="400px" width="400px">
+           <div class="lav">
+             Shoe
+           </div>
+        
+       </div>
+
+       <div class="popularpt">
+        
+        
+        <img src="image/ptotect2.jpg" alt="" height="400px" width="400px">
+        <div class="lav">
+          Shoe
+        </div>
+     
+      </div>
+
+      <div class="popularpt">
+        
+        
+        <img src="image/ptotect5.jpg" alt="" height="400px" width="400px">
+        <div class="lav">
+          Shoe
+        </div>
+     
+      </div>
+      <div class="popularpt">
+        
+        
+        <img src="image/ptotect4.jpg" alt="" height="400px" width="400px">
+        <div class="lav">
+          Shoe
+        </div>
+     
+      </div>
+
+
+
+
+    </div>  
+    
+       
+  
+    
+        
+        
+  
+
+  
+   
+    
+    
+     
+      
+      
+    
+
+ 
+    <script>
+      var peschool = window.pageYOffset;
+      window.onscroll = function() {
+      var nowschool = window.pageYOffset;
+        if (peschool > nowschool) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-70px";
+        }
+        peschool = nowschool;
+      }
+      </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: khh;
+    src: url(../Overpass/Overpass-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: khh2;
+    src: url(../Overpass/Overpass-Italic-VariableFont_wght.ttf);
+}
+/*side nav-bar*/
+
+
+.nav-bar {
+    height: 100%;
+    margin-left: -20px;
+    width: 0px;
+    background-color: rgba(0, 0, 0, 0.932);
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding-top:  50px;
+    font-size: 15px;
+    transition: .5s;
+
+
+}
+.nav-bar h3 {
+    margin-left: 30px;
+    font-family: khh2;
+    color:rgb(255, 255, 255) ;
+    padding: 30px;
+    font-size: 25px;
+}
+.nav-bar img{
+    border-radius: 100%;
+    display:block;
+    max-width: 200px;
+    max-height: auto;
+    margin-left: 55px;
+    margin-top: 60px;
+
+}
+
+.nav-bar a {
+    font-size: 20px;
+    margin-left: 10px;
+    display:block;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: khh;
+    color: rgba(155, 144, 144, 0.87);
+}
+.nav-bar a:hover{
+    text-shadow: .5px .5px rgba(255, 255, 255, 0.753);
+    font-size: 23px;
+    color: white;
+    letter-spacing: 1.5px;
+    transition: .8s;
+}
+.nav-bar .close{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 35px;
+    margin-left: 40px;
+    color: rgba(155, 144, 144, 0.87);
+    cursor: pointer;
+    
+}
+.nav-bar .close:hover{
+    text-shadow: .5px .5px rgba(255, 255, 255, 0.753);
+    font-size: 40px;
+    color: white;
+    transition: .8s;
+}
+@media screen{
+    .nav-bar    { padding-top: 15px;}
+    .nav-bar a{font-size: 18px;}
+}
+.open {
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 20px;
+    color:  rgba(155, 144, 144, 0.87);
+    
+}
+.open:hover{
+    text-shadow: .5px .5px rgba(255, 255, 255, 0.753);
+    font-size: 30px;
+    color: white;
+    transition: .5s;
+}
+/*for intro aera*/
+.intro{
+    background-image: linear-gradient(to right,rgba(43, 41, 41, 0.87),black);
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.intro_myself{
+    color: rgba(221, 213, 213, 0.986);
+    position: relative;
+    text-align: center;
+    height: 600px;
+    
+}
+.intro_myself h3{
+    padding: 15px;
+    font-family: khh2;
+    font-size: 30px;
+} 
+.intro_myself hr{
+    width: 300px;
+    border: 1px solid white;
+    background-color: white;
+    margin: auto;
+}

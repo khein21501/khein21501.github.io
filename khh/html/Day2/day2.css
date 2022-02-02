@@ -1,0 +1,118 @@
+#navbar {
+    background-color: black;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    display: block;
+    transition:top 0.5s;
+    width: 100%;
+    opacity: 80%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#navbar a{
+    float:left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    
+    
+}
+#navbar a:hover{
+    text-decoration: underline;
+
+}
+#navbar a :active{
+    text-decoration: underline;
+}
+
+#navbar input{
+    width: 200px;
+    float: left;
+    padding: 5px;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: 0.5s;
+
+}
+#navbar input :focus{
+    width: 100%;
+}
+.head {
+    background-image: url(image/background.jpg);
+    height: 700px;
+    width:100%;
+    border: 0;
+    display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+.porpularbg{
+    background-image: url(image/ultraboost.jpg);
+    width: 100%;
+    min-height: auto;
+    background-position: center;
+    position: absolute;
+    opacity: 90%;
+    
+
+}
+.porpularbg h2{
+    text-align: center;
+    color: white;
+    padding: 30px;
+    letter-spacing: 2.5px;
+    
+}
+.porpularbg a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    size: 17px;
+    padding: 10px;
+    border:whitesmoke;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+}
+.porpularbg a:hover{
+    text-decoration: underline;
+}
+.popularpt{
+    float: left;
+    width: 300px; 
+    margin: 5px;
+    border: 1px solid white;
+   
+
+}
+.popularpt img{
+    width: 100%;
+    height: auto;
+}
+.lav{
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    
+}
+.popolarpt :hover{
+    border: 1px solid #777;
+}
+
+   
+
