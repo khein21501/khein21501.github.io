@@ -1,0 +1,16 @@
+Assignment - 3
+--------------------------------------------
+Enter user name:
+Enter password:
+
+.....problem solving....
+
+uName="mmit";
+uPass="admin123";
+
+- two user input do not match both uName and uPass, display-
+- user name and password do not match.
+- only user name match,
+- password is incorrect.
+- two user input match both uName and uPass,
+- login success.

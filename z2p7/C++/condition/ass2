@@ -1,0 +1,17 @@
+Enter item price:
+Enter item quantity:
+
+problem solving.
+- user input for price & quantity.
+-discount of 10% is offered if the expense is more than 5000.
+- find total expense.
+
+Eg1.
+Enter quantity:14
+Enter price:300
+Total Expense: 4200
+
+Eg2.
+Enter quantity:50
+Enter price:300
+Total Expense: 13500
