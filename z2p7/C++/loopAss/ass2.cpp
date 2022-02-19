@@ -1,18 +1,23 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int num,eachDigit;
+    int num,eachDigit,sum;
     cout<<"Enter a number :";
     cin>>num;
     
-
-    for (int i = 0; i<=to_string(num).length(); i++)
+    for (int i = 0; i <=sizeof(num); i++)
+    
+    
     {
         eachDigit=num%10;
+        sum = sum + eachDigit;
         num=num/10;
-    
+        
+        
+
     }
-    cout<<"sum is :"<<eachDigit;
+    cout<<"The Sum of digit is "<<sum;
+    
     
    
 
