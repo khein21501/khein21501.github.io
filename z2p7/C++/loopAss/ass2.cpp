@@ -4,8 +4,8 @@ int main(){
     int num,eachDigit,sum;
     cout<<"Enter a number :";
     cin>>num;
-    
-    for (int i = 0; i <=sizeof(num); i++)
+    int num2 = to_string(num).length();
+    for (int i = 0; i <=num2; i++)
     
     
     {

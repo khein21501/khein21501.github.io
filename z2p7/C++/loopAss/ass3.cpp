@@ -2,27 +2,26 @@
 using namespace std;
 int main(){
     int start_num=5,end_num=100;
-    
-
-    int i =0;
-    while (i<start_num)
+    cout<<"Enter Start Number : ";
+    cin>>start_num;
+    cout<<"Enter End Number : ";
+    cin>>end_num;
+    int i = start_num;
+    for (int i = start_num; i < end_num; i++)
     {
-        if (start_num%5==0 && start_num%8==0)
+        if (i%5==0 && i%8==0)
         {
-            cout<<"The number divided by 8 and 5 :"<<start_num;
-        }else if (start_num%8==0)
+            cout<<"Divided by 5 and 8 : "<<i<<endl;
+        }else if (i%5==0)
         {
-            cout<<"The number divided by 8 :"<<start_num;
-        }else if (start_num%5==0)
-        {
-            cout<<"The number divided by 5 :"<<start_num;
-        }else{
-            cout<<"The number not divided by 5 and 8 : "<<start_num;
+            cout<<"DIvided by 5 :"<<i<<endl;
         }
-        start_num++;
         
         
     }
+    
+
+   
     
         
     
