@@ -1,0 +1,35 @@
+/*1*/
+SELECT MAX(salary) FROM employee;
+
+/*2*/
+SELECT MIN(salary) FROM employee;
+
+/*3*/
+SELECT COUNT(*) FROM employee WHERE registerDate >= '2013-02-12';
+
+/*4*/
+SELECT DISTINCT city FROM employee;
+
+/*5*/
+SELECT SUM(salary) FROM employee;
+
+/*6*/
+SELECT city, MAX(salary) FROM employee GROUP BY city;
+
+/*7*/
+SELECT AVG(salary) FROM employee WHERE department = 'HR';
+
+/*8*/
+SELECT department, MIN(salary), MAX(salary), AVG(salary) FROM employee GROUP BY department;
+
+/*9*/
+SELECT salary, COUNT(*) FROM employee GROUP BY salary HAVING COUNT(*) > 1;
+
+/*10*/
+SELECT department, COUNT(*) FROM employee GROUP BY department HAVING COUNT(*) > 1;
+
+/*11*/
+SELECT * FROM employee WHERE empName LIKE '%hy%' ORDER BY empName ASC;
+
+/*12*/
+SELECT MAX(salary) FROM employee GROUP BY empNo LIMIT 3;
