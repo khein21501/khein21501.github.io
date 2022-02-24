@@ -23,7 +23,7 @@ int main () {
                cout << "Enter Programming Mark : " ;
                cin >> student_mark [i] [j] ;
 
-           } else if ( j == 0 ) {
+           } else if ( j == 2 ) {
 
                cout << "Enter English Mark : " ;
                cin >> student_mark [i] [j] ;
@@ -87,5 +87,6 @@ int main () {
 
     }
 
+    
     return 0;
 }
