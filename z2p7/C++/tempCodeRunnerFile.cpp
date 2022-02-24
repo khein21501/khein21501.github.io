@@ -1,0 +1,1 @@
+cout<<weather_info[i][j]<<"\t";
