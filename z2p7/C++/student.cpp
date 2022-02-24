@@ -3,7 +3,7 @@ using namespace std ;
 int main () {
     
     int count ;
-    cout << "Enter Number of Students : " ;
+    cout<< "Enter Number of Students : " ;
     cin >> count ;
 
     int student_mark [count] [7] ;
