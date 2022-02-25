@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
     
-    int count,total=0,avg;
+    int count;
     cout<< "Enter Number of Month : ";
     cin>>count;
 
@@ -33,27 +33,20 @@ int main(){
         }
         
     }
-    
-<<<<<<< HEAD
-   for (int j = 0; j < 4; j++)
-   {
-       for (int i = 1; i < count+2; i++)
-       {   
-           int total =0;
-           int num = weather_info[i][j];
-            total = num + total;
-=======
-    for (int j = 1; j < 4; j++)
+
+    //calculate the process
+    for (int j = 1; j <  4; j++)
     {
-        
+        int sum =0;
+       
         for (int i = 0; i < count; i++)
-        {   
+        {
             
-            total += weather_info[i][j];
->>>>>>> bfd42674b347ad598b902c6ad3a1e0cd8c9a6597
-            float avg = total*1.0/count;
-            weather_info[count][0]=total;
-            weather_info[count+1][0]=avg;
+            
+            sum += weather_info[i][j];
+            float avg = sum/count;
+            weather_info[count][j]= sum;
+            weather_info[count+1][j]= avg;
 
         }
         
@@ -66,16 +59,29 @@ int main(){
 
 
 
-   
-   
-    cout << "\nWeather infomation for  : " << count << " Months " << endl ;
-    cout << "\nNo\tRain\tWind\tTemp " << endl ;
+    
+    // out put the weather info
+    cout << "\nWeather information for : " << count << " Months " << endl ;
+    cout << "\nNo\tRain\tWind\tTemp" << endl ;
+
+
+
     for (int i = 0; i < count+2; i++)
     {
         for (int j = 0; j < 4; j++)
         {   
-
-            cout<<weather_info[i][j]<<"\t";
+            if (i == count && j == 0)
+            {
+                cout<<"Total\t";
+            }else if (i == count +1 && j == 0)
+            {
+                cout<<"Average\t";
+            }else{
+                 cout<<weather_info[i][j]<<"\t";
+            }
+            
+            
+           
         }
         cout<<endl;
     }
