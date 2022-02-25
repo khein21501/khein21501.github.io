@@ -33,9 +33,9 @@ int main(){
         
     }
     
-   for (int j = 1; j < 4; j++)
+   for (int j = 0; j < 4; j++)
    {
-       for (int i = 0; i < count; i++)
+       for (int i = 1; i < count+2; i++)
        {   
            int total =0;
            int num = weather_info[i][j];
