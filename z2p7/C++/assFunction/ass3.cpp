@@ -35,7 +35,7 @@ void initializeItemData(){
 }
 
 void showData(){
-    cout<<"BarCode\t\tItem\tPrice"<<endl;
+    cout<<"BarCode\tItem\tPrice"<<endl;
     for (int i = 0; i < 5; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -50,15 +50,16 @@ void searchItemByCode(string barCode){
     
     for (int i = 0; i < 5; i++)
     {
-        if (barCode == itemList[i][3])
+        if (barCode == itemList[i][0])
         {
-           for (int j = 0; j < 3; j++)
-           {
+            for (int j = 0; j < 3; j++)
+            {
                 cout<<itemList[i][j]<<"\t";
-           }
-           
-        
+            }
+            
         }
+        
+        
     }
     
     
