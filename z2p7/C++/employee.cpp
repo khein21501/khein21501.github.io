@@ -43,7 +43,7 @@ int main(){
     
     for (int i = 0; i < 4; i++)
     {
-        emp[i].salaryIncreace(300000);
+        emp[i].salaryIncreace(30000);
     }
     cout<<"\n_______Update Employee List Information________\n";
      for (int  i = 0; i < 4; i++)

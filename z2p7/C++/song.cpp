@@ -7,6 +7,9 @@ class Song{
         string singer;
     public:
         Song(){
+            
+        }
+        Song(){
             this->title="unknown";
             this->album="unknown";
             this->singer="unknown";
