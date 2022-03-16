@@ -7,57 +7,77 @@ class StudentAss{
         string couse;
     public:
         StudentAss(){
-
+            this -> rno = 0;
+            this -> name="Unknown";
+            this -> couse="Unknown";
         }
-        StudentAss(int rno,string name,string couse){
-            this ->rno= rno;
-            this ->name= name;
-            this ->couse= couse;
+        void setRno(int rno){
+            this -> rno = rno;
+        }
+        int getRno(){
+            return this ->rno;
+        }
+        void setName(string name){
+            this -> name = name;
+        }
+        string getName(){
+            return this ->name;
+        }
+        void setCouse(string couse){
+            this -> couse = couse;
+        }
+        string getCouse(){
+            return this ->couse;
         }
         
         
         void displayInfo(){
-            cout<<"\nName :"<<rno<<"\tName :"<<name<<"\tCouse :"<<couse<<endl;
+            cout<<getRno()<<"\t"<<getName()<<"\t"<<getCouse()<<endl;
         }
-        
-
 };
+  StudentAss stud[5];
+        int rno;
+        string name,couse;
+        void search(){
+            int schRno;
+            cout<<"Search Roll Number :" ;
+            cin>>schRno;
+                for (int i = 0; i < 5; i++)
+                {
+                    if (schRno==stud[i].getRno())
+                    {
+                        cout<<stud[i].getRno()<<"\t"<<stud[i].getName()<<"\t"<<stud[i].getCouse();
+                    }
+                    
+                }
+                
+        }      
+
+
 int main(){
-    StudentAss stud[5][3];
-    int rno;
-    string name;
-    string couse;
+    
     for (int i = 0; i < 5; i++)
     {
-        cout<<"-------Student Information"<<i+1<<endl;
-       for (int j = 0; j < 3; j++)
-       {
-        
-        cout<<"Enter Roll No :";
+        cout<<"Enter Student "<<i +1 <<"information !"<<endl;
+        cout<<"Enter Roll Number :";
         cin>>rno;
+        cin.ignore();
         cout<<"Enter Name :";
         getline(cin,name);
-        cin.ignore();
         cout<<"Enter Couse :";
         getline(cin,couse);
-        cin.ignore();
-        stud[i][j]=StudentAss(rno,name,couse);
-       }
-       
-
+        stud[i].setRno(rno);
+        stud[i].setName(name);
+        stud[i].setCouse(couse);
     }
-
-    cout<<"-----Student Information------\n";
+    cout<<"---Student Information----"<<endl;
+    cout<<"RollNumber\tName\t\tCouse"<<endl;
     for (int i = 0; i < 5; i++)
     {
-        for (int j = 0; j < 3; j++)
-        {
-            stud[i][j].displayInfo();
-       
-        }
-        
+        stud[i].displayInfo();
     }
-    
+    search();
+       
     
     return 0;
 }
