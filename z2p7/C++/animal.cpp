@@ -9,7 +9,7 @@ class Animal{
             this->name=name;
         }
         void setLeg(int leg){
-            this->leg = leg;
+            this->leg=leg;
         }
         string getName(){
             return this->name;
@@ -26,25 +26,25 @@ class Animal{
 };
 
 class Bird:public Animal{
-    private:
+   private:
         int wings;
-    public:
+   public:
         void setWings(int wings){
-            this->wings=wings;
+            this->wings = wings;
         }
         int getWings(){
             return this->wings;
         }
-        void initData(string name, int leg,int wings){
-
-            this->wings =wings;
+        void initData(string name,int leg,int wings){
+            this->wings = wings;
             this->name=name;
-            this->leg=leg;
+            this->leg = leg;
         }
         void fly(){
             cout<<"\nI can fly!"<<endl;
         }
 };
+
 class Elephant:public Animal{
     private:
         int tail;
@@ -53,39 +53,40 @@ class Elephant:public Animal{
             this->tail=tail;
         }
         int getTail(){
-
-            return->tail=tail;
+            return this->tail;
         }
         void swim(){
-            cout<<"\n I can swim !"<<endl;
+            cout<<"\nI can swim!"<<endl;
         }
         void showInfo(){
-            cout<<"\n\n________Elephant Info________\n\n";
-            cout<<"Name : "<<getName()<<endl;
-            cout<<"No of legs : "<<Animal::getLeg()<<endl;
-            cout<<"No of tail :"<<getTail()<<endl;
-            cout<<swim(); 
+            cout<<"\n\n_____Elephant Info _____\n\n";
+            cout<<"Name: "<<getName() <<endl;
+            cout<<"No of Legs: " << Animal::getLeg()<<endl;
+            cout<<"No of Tail: "<<tail<<endl;
         }
 };
-        
+
 int main(){
-    Bird bird1=Bird();
-    Elephant elephant1=Elephant();
+    Bird bird1 ;
     bird1.setName("ShweGae");
     bird1.setLeg(2);
-    cout<<bird1.getName()<<"has"<< bird1.getLeg()<<"Legs !"<<endl;
+    cout<<bird1.getName()<<" has " << bird1.getLeg() << " Legs !" <<endl ;
     bird1.eat();
     bird1.sleep();
     bird1.setWings(2);
     bird1.fly();
     Bird bird2;
     bird2.initData("NgweGae",2,2);
-    cout<<bird2.getName()<<"has"<<bird2.getLeg()<<"Legs and "<<bird2.getWings()<<"wings !"<<endl;
-    elephant1.setName("Mo Mo");
+    cout<<bird2.getName()<< " has " << bird2.getLeg() << " legs and " <<bird2.getWings() << " wings !" <<endl;
+    Elephant elephant1;
+    elephant1.setName("MoMo");
     elephant1.setLeg(4);
     elephant1.setTail(1);
     elephant1.swim();
     elephant1.showInfo();
-    
+    cout<<elephant1.getName()<<" has " << elephant1.getLeg() << " legs !" <<endl;
+   
+   // elephant1.name="YoYO";
+   
     return 0;
 }
