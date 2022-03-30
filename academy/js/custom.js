@@ -78,7 +78,7 @@
             $("#message").slideUp(750, function() {
                 $('#message').hide();
                 $('#submit')
-                    .after('<img src="images/ajax-loader.gif" class="loader" />')
+                    .after('<img src="../images/Academy Logo(New).JPG" class="loader" />')
                     .attr('disabled', 'disabled');
                 $.post(action, {
                         first_name: $('#first_name').val(),
