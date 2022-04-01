@@ -1,0 +1,1 @@
+extractData('rainfall.dat')

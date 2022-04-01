@@ -59,14 +59,12 @@ int main(){
     for (int i = 0; i < 5; i++)
     {
         cout<<"Enter Student "<<i +1 <<"information !"<<endl;
-        cout<<"Enter Roll Number :";
-        cin>>rno;
-        cin.ignore();
+        
         cout<<"Enter Name :";
         getline(cin,name);
         cout<<"Enter Couse :";
         getline(cin,couse);
-        stud[i].setRno(rno);
+        stud[i].setRno(i+1);
         stud[i].setName(name);
         stud[i].setCouse(couse);
     }
