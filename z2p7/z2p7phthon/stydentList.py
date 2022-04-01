@@ -68,6 +68,20 @@ def delete_student(rollNo):
         print('One Student deleted')
     else:
         print('Roll Number not found')
+def search_student(rollNo):
+    file = open('studentlist.json','r')
+    lines = file.readlines()
+    file.close()
+    myjson = json.loads(lines[0])
+    index = 0 
+    print('Roll No\t Name\t Address\t Email\t\tPhone')
+    for student in myjson['studentlist']:
+        if(student['rollNo'])==rollNo:
+            print('%s\t%s\t%s\t%s\t%s'%(student['rollNo'],student['name'],student['address'],student['email'],student['phone']))
+        else:
+            index +=1
+
+
 
     
             
@@ -78,6 +92,7 @@ def main():
     print('2 Show student list')
     print('3 Delete one student')
     print('4 Exit From program')
+    print('5 Search with ID')
     ans = int(input('Enter Your Choice :'))
     if ans ==1:
         ask_student_info()
@@ -85,9 +100,13 @@ def main():
     elif ans ==2:
         show_student_list()
     elif ans==3:
+        show_student_list()
         rollNo = input('Enter Roll No: ')
         delete_student(rollNo)
         show_student_list()
+    elif ans == 5:
+        rollNo = input('Enter Roll No: ')
+        search_student(rollNo)
     else:
         print('Terminating From Program ......!')
         sys.exit(1)
