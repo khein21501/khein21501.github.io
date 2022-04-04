@@ -22,6 +22,7 @@ def ask_student_info():
     phone=input('ENter Phone: ')
     student=Student(rollNo,name,address,email,phone)
     add_student(student.__dict__)
+    
 def add_student(student):
     #1 open json file and read
     infile = open('studentlist.json','r')

@@ -23,7 +23,7 @@ def add_expense(expense):
     lines  =infile.readlines()
     infile.close()
     myjson = json.loads(lines[0])
-    print(type(myjson['expense.json']))
+    print(type(myjson['expense']))
     myjson['expense'].append(expense)
     print(myjson)
     file = open('expense.json','w')

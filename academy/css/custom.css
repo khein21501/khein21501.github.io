@@ -45,7 +45,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    background: #39b49a;
+    background-image: radial-gradient(#fbfbfb 80%, #06418467);
     z-index: 11000;
     position: fixed;
     display: flex;
@@ -850,7 +850,7 @@ body.clinic_version .footer .widget-title h3 {
 	color:#064184;
 }
 .preloader {
-    width: 350px;
+    width: 80px;
 }
 .footer-info p {
     padding-left: 40px;
