@@ -45,7 +45,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: radial-gradient(#fbfbfb 80%, #06418467);
+    background-color: #fdfdfd;
     z-index: 11000;
     position: fixed;
     display: flex;
@@ -888,7 +888,7 @@ body.clinic_version .footer .widget-title h3 {
     width: 20%;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(to right, #1d86df 0%, #39b49a 100%);
+    background: linear-gradient(to right, #064184 0%, #fe000c 100%);
     border: none;
     font-size: 24px;
     position: relative;
@@ -897,7 +897,7 @@ body.clinic_version .footer .widget-title h3 {
     text-align: center;
 }
 .newsletter-form .mc-submit:hover,.newsletter-form .mc-submit:focus {
-    background: linear-gradient(to right, #39b49a 0%, #1d86df 100%);
+    background: linear-gradient(to right, #fe000c 0%, #064184 100%);
 }
 #testimonials {
     background-image: url('../images/bg-testimonial.png');

@@ -19,28 +19,49 @@ def input_expense():
     add_expense(expense.__dict__)
 
 def add_expense(expense):
-    infile = open('expense.json','r')
+    infile = open('expenselist.json','r')
     lines  =infile.readlines()
     infile.close()
     myjson = json.loads(lines[0])
-    print(type(myjson['expense']))
-    myjson['expense'].append(expense)
-    print(myjson)
-    file = open('expense.json','w')
+    
+    myjson['expenselist'].append(expense)
+    
+    file = open('expenselist.json','w')
     file.write(json.dumps(myjson))
     file.close()
 
 def show_expense():
-    file = open('expense.json','r')
+    file = open('expenselist.json','r')
     lines = file.readlines()
     file.close()
     myjson=json.loads(lines[0])
-    for expense in myjson['expense']:
+    print('Date\tTitle\tAmount')
+    for expense in myjson['expenselist']:
         print('%s\t%s\t%s'%(expense['date'],expense['title'],expense['amount']))
 
-
+def sum_expense():
+    file = open('expenselist.json','r')
+    lines = file.readlines()
+    file.close()
+    myjson = json.loads(lines[0])
+    sum = 0 
+    for expense in myjson['expenelist']:
+        sum += expense['amount']
    
 def main():
-    input_expense()
-    show_expense()
+    print('Place Choice')
+    print('1 : Add New Expense')
+    print('2 : SHow List')
+    print('3 : Totle of Expense')
+    print('4 : Delete')
+    ans = int(input('Enter Your Choice :'))
+    if ans == 1:
+        input_expense()
+        show_expense()
+    elif ans == 2:
+        show_expense()
+    elif ans == 3:
+        sum_expense()
+      
+
 main()
