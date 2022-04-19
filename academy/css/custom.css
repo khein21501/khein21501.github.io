@@ -1369,6 +1369,7 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
     margin: 3px;
     border-radius: 10px;
     transition-duration: 0.8s;
+    counter-increment: carousel-cell;
   }
   
   
@@ -1383,6 +1384,10 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
     padding: 50px;
     text-align: center;
   }
+  
+  
+  
+  
 
 
 
