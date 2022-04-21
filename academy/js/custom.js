@@ -221,11 +221,13 @@ var TxtType = function(el, toRotate, period) {
 /*== map js ==*/
 
 /*==  for doctor tab ==*/
-function openCity(doctorType) {
+function openDoctor(doctorType) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
+    
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
+      
     }
     
     document.getElementById(doctorType).style.display = "block";

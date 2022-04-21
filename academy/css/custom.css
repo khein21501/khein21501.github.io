@@ -1353,25 +1353,29 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
 
 .info-inner {float: left;margin-left: 50px;}
 
+
 }
 
-/*for doctor list*/
+
+  
+  /*for doctor list*/
 .tablink {
     background-color: #1d86df;
     color: white;
     float: left;
     border: none;
-    outline: none;
     cursor: pointer;
-    padding: 18px 16px;
+    padding: 40px;
     font-size: 17px;
-    width: 31%;
     margin: 10px;
     border-radius: 10px;
     transition-duration: 0.8s;
     counter-increment: carousel-cell;
+    text-align: center;
+    width: 350px;
+    height: 120px;
   }
-  
+
   
   .tablink:hover {
     background-color: #064184;
@@ -1391,8 +1395,6 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
       color: #000;
       
   }
-  
-  
   
 
 
