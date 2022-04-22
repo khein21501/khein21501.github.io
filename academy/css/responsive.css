@@ -388,6 +388,44 @@
         float: left;
         border: 0 solid #ededed;
     }
+    .tablink {
+        background-color: #1d86df;
+        color: white;
+        float: left;
+        border: none;
+        cursor: pointer;
+        padding: 40px;
+        font-size: 17px;
+        margin: 10px;
+        border-radius: 10px;
+        transition-duration: 0.8s;
+        counter-increment: carousel-cell;
+        text-align: center;
+        width: 350px;
+        height: 120px;
+      }
+    
+      
+      .tablink:hover {
+        background-color: #064184;
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        color: white;
+        display: none;
+        padding: 50px;
+        text-align: center;
+      }
+      
+      .table{
+          background-color: #fe000d2c;
+          font-weight: 400;
+          color: #000;
+          
+      }
+      
+    
 }
 @media (min-width: 576px) { 
     .tablink {
