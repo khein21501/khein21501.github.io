@@ -1359,10 +1359,42 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
 
   
   /*for doctor list*/
+ 
+  .tablink {
+    background-color: #1d86df;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 32px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    transition-duration: 0.8s;
+    text-align: center;
+    width: 350px;
+    height: 100px;
+  }
 
-
-
-
+  
+  .tablink:hover {
+    background-color: #064184;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .table{
+      background-color: #fe000d2c;
+      font-weight: 400;
+      color: #000;
+      
+  }
+ 
 
 
 
