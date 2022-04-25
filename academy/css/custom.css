@@ -1391,7 +1391,9 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
       background-color: #f5eeef2c;
       font-weight: 400;
       color: #000;
-      
+      border-spacing: 0;
+      border-collapse: collapse;
+      display: table;
       
   }
   .table thead{

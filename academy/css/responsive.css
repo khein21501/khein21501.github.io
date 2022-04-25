@@ -341,6 +341,7 @@
     .first-section h2 {
         font-size: 32px;
     }
+    
 }
 
 @media (max-width: 600px) {
@@ -388,7 +389,17 @@
         float: left;
         border: 0 solid #ededed;
     }
-    
-      
+    .table {
+        background-color: #f5eeef2c;
+        font-weight: 400;
+        color: #000;
+        border-spacing: 0;
+        display: table;
+        font-size: 10px;
+        
+        
+        
+        
+    }
     
 }
