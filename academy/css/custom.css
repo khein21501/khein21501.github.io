@@ -1294,7 +1294,9 @@ body.clinic_version .desc {
     float: right;
     width: 100%;
 }
-	
+.doctor_list {
+    overflow-y: hidden;
+}
 }
 
 @media (min-width:768px) and (max-width:991px) {
