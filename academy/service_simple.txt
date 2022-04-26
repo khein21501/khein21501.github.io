@@ -1,0 +1,114 @@
+	<div class="carousel-inner" role="listbox">
+                  <div class="item">
+                     <div class="card">
+                        <div>
+                           <div class="service-widget">
+                              <div class="post-media wow fadeIn">
+                                 <a href="images/honey1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                 <img src="images/honey1.png" alt="" class="card-img-top">
+                              </div>
+                              <div class="card-body">
+                                 <h3>Kyaw Htin Hein</h3>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card">
+                        <div class=>
+                           <div class="service-widget">
+                              <div class="post-media wow fadeIn">
+                                 <a href="images/honey1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                 <img src="images/honey1.png" alt="" class="card-img-top">
+                              </div>
+                              <div class="card-body">
+                                 <h3>Kyaw Htin Hein</h3>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card">
+                        <div>
+                           <div class="service-widget">
+                              <div class="post-media wow fadeIn">
+                                 <a href="images/honey1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                 <img src="images/honey1.png" alt="" class="card-img-top">
+                              </div>
+                              <div class="card-body">
+                                 <h3>Kyaw Htin Hein</h3>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card">
+                        <div>
+                           <div class="service-widget">
+                              <div class="post-media wow fadeIn">
+                                 <a href="images/honey1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                 <img src="images/honey1.png" alt="" class="card-img-top">
+                              </div>
+                              <div class="card-body">
+                                 <h3>Kyaw Htin Hein</h3>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div><div class="item">
+                     <div class="card">
+                        <div>
+                           <div class="service-widget">
+                              <div class="post-media wow fadeIn">
+                                 <a href="images/honey1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                 <img src="images/honey1.png" alt="" class="card-img-top">
+                              </div>
+                              <div class="card-body">
+                                 <h3>Kyaw Htin Hein</h3>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card">
+                        <div>
+                           <div class="service-widget">
+                              <div class="post-media wow fadeIn">
+                                 <a href="images/honey1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                 <img src="images/honey1.png" alt="" class="card-img-top">
+                              </div>
+                              <div class="card-body">
+                                 <h3>Kyaw Htin Hein</h3>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  <div class="item">
+                     <div class="card">
+                        <div>
+                           <div class="service-widget">
+                              <div class="post-media wow fadeIn">
+                                 <a href="images/honey1.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                                 <img src="images/honey1.png" alt="" class="card-img-top">
+                              </div>
+                              <div class="card-body">
+                                 <h3>Kyaw Htin Hein</h3>
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>

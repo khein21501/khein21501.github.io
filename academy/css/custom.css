@@ -459,12 +459,12 @@ hr.hr1 {
 }
 .services {
     width: 100%;
-    background: linear-gradient(to right, #1d86df 0%, #39b49a 100%);
+    background: linear-gradient(to right,  #157fda  0%, #064184 100%);
     padding: 75px 0;
 }
 .services {
+    background-image: url(../images/service-bg.png);
     width: 100%;
-    background: url("../images/honey1.png");
     padding: 75px 0;
     background-size: cover;
     background-attachment: fixed;
@@ -1408,7 +1408,9 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
       height: 80px;
   }
   
-  
+  .item{
+      margin: 20px;
+  }
 
 
 
