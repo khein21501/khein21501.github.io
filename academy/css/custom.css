@@ -457,13 +457,13 @@ hr.hr1 {
     margin: 60px 0;
     border: 1px dashed #f0f0f0;
 }
-.services {
+.services_bg{
     width: 100%;
     background: linear-gradient(to right,  #157fda  0%, #064184 100%);
     padding: 75px 0;
 }
-.services {
-    background-image: url(../images/service-bg.png);
+.services_bg{
+    background-image: url(../images/header.png);
     width: 100%;
     padding: 75px 0;
     background-size: cover;
@@ -1411,6 +1411,8 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
   .item{
       margin: 20px;
   }
+
+  
 
 
 
