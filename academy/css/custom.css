@@ -444,6 +444,8 @@ body.clinic_version .section {
 .message-box p {
     margin-bottom: 15px;
 }
+
+
 .service-widget h3 {
     font-size: 16px;
     color: #ffffff;
@@ -471,6 +473,7 @@ hr.hr1 {
     background-repeat: no-repeat;
 	float:left;
 	width:100%;
+    filter: blur(5px);
 }
 .serv {
     float: left;
@@ -1363,8 +1366,9 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
   /*for doctor list*/
  
   .tablink {
-    background-color: #1d86df;
-    color: white;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px  #064184;
+    color: #064184;
     border: none;
     cursor: pointer;
     padding: 32px;
@@ -1374,11 +1378,14 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
     transition-duration: 0.8s;
     text-align: center;
     
+    
   }
 
   
   .tablink:hover {
     background-color: #064184;
+    color: white;
+    box-shadow: 1px 1px 1px 1px white;
   }
   
   /* Style the tab content */
@@ -1412,8 +1419,7 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
       margin: 20px;
   }
 
-  
-
+ 
 
 
 
