@@ -463,6 +463,7 @@ hr.hr1 {
     width: 100%;
     background: linear-gradient(to right,  #157fda  0%, #064184 100%);
     padding: 75px 0;
+    
 }
 .services_bg{
     background-image: url(../images/header.png);
@@ -473,7 +474,7 @@ hr.hr1 {
     background-repeat: no-repeat;
 	float:left;
 	width:100%;
-    filter: blur(5px);
+    
 }
 .serv {
     float: left;
@@ -1419,9 +1420,10 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
       margin: 20px;
   }
 
- 
-
-
+ .slider{
+     display: table;
+     
+ }
 
 
 
