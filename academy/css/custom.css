@@ -475,6 +475,7 @@ hr.hr1 {
 	float:left;
 	width:100%;
     
+    
 }
 .serv {
     float: left;
@@ -1421,11 +1422,12 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
   }
 
  .slider{
-     display: table;
-     
+    display: table;
+    
  }
 
 
+ 
 
 
 
