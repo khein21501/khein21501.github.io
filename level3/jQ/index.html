@@ -9,6 +9,15 @@
     <script src="custom.js"></script>
     <script>
         $(document).ready(function(){
+            var h2 = $("h2");
+            console.log(h2)
+
+            var myp = $("#myp");
+            console.log(myp)
+
+            var article = $(".detail");
+            console.log(article)
+
             $("button").click(function(){
                 alert('ok')
             })
@@ -16,7 +25,25 @@
     </script>
 </head>
 <body>
-    Hello World
+    <h2>Hello World</h2>
+    <h2>Hello JQ</h2>
+
+    <p id="myp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsam nostrum dolores. Quo, earum. Obcaecati repellat suscipit cum explicabo consequuntur.
+    </p>
+
+    <article class="detail">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed debitis commodi doloribus pariatur non, saepe accusantium assumenda itaque dolore dicta ducimus repudiandae excepturi placeat sint accusamus neque voluptas? Nisi, unde!
+    </article>
+    <div class="detail">
+        This is Detail
+    </div>
+    <div id="contect">
+        <ul class="teacher">
+            
+        </ul>
+    </div>
     <button>click</button>
+
 </body>
 </html>
