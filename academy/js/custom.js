@@ -210,14 +210,7 @@ var TxtType = function(el, toRotate, period) {
 
 /*== map js ==*/
 
-    function myMap() {
-        var mapProp= {
-            center:new google.maps.LatLng(16.790298603586667, 96.12796059332237),
-            zoom:30,
-        };
-        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-	
+   
 /*== map js ==*/
 
 /*==  for doctor tab ==*/
