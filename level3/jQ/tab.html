@@ -38,19 +38,17 @@
 
   <script src="jquery.min.js"></script>
   <script>
-    $(function (param) { 
+    $(function(param){
       $('.content').first().slideDown();
 
-      $('ul.link-wapper li a').on("click",function (event) { 
-          var current_tab = $(this);
-          $('ul.link-wapper li a').removeClass('active');
-          current_tab.addClass('active');
-
-          $('.content').slideUp();
-          current_tab_href = current_tab.attr('href'); // #home
-          $(current_tab_href).slideDown(); // $('#home')
-
-          event.preventDefault();
+      $('ul.link-wapper li a').on("click",function(event){
+        var current_tab = $(this);
+        $('ul.link-wapper li a').removeClass('active');
+        current_tab.addClass('active');
+      $('.content').slideUp();
+      current_tab_href = current_tab.attr('href');
+      $(current_tab_href).slideDown();
+      event.preventDefault();
       })
     })
   </script>

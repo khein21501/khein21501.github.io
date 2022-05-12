@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.min.js">
+        
+    </script>
+    <script>
+        $(function(){
+            var student = [
+                {name:"Mg Mg",age:22,gender:"Male"},
+                {name:"Aung Aung",age:23,gender:"Male"},
+                {name:"Su Su",age:30,gender:"Female"},
+                {name:"Mya Mya",age:29,gender:"Female"}
+
+            ]
+            console.log(student);
+            var data = ""
+            $.each(student,function(i,v){
+                data += `<tr>
+                            <td>${i}</td>
+                            <td>${v.name}</td>
+                            <td>${v.age}</td>
+                            <td>${v.gender}</td>  
+                        </tr>`
+            })
+        })
+    </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            
+            </tr>
+            <tbody>
+                
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>
