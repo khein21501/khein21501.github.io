@@ -479,6 +479,9 @@ hr.hr1 {
     
     
 }
+.services_bg button{
+    border: 0;
+}
 .serv {
     float: left;
     width: 100%;
@@ -1421,8 +1424,9 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
   
   .item{
       margin: 20px;
+      padding: 10px;
+      display: flexbox;
   }
-
  
 
  

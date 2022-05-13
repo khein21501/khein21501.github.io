@@ -14,30 +14,47 @@
                 {name:"Mg Mg",age:22,gender:"Male"},
                 {name:"Aung Aung",age:23,gender:"Male"},
                 {name:"Su Su",age:30,gender:"Female"},
-                {name:"Mya Mya",age:29,gender:"Female"}
+                {name:"Mya Mya",age:29,gender:"Female"},
+                {name:"Kyaw Kyaw",age:21,gender:"Male"},
+                {name:"Khin Khin",age:30,gender:"Female"},
+                {name:"Zaw Zaw",age:20,gender:"Male"}
 
             ]
+            var femalestudent = student.filter(row => row.gender == "Female")
+            var malestudent = student.filter(row =>row.gender=="Male")
             console.log(student);
             var data = ""
             $.each(student,function(i,v){
                 data += `<tr>
-                            <td>${i}</td>
+                            <td>${i+1}</td>
                             <td>${v.name}</td>
                             <td>${v.age}</td>
-                            <td>${v.gender}</td>  
+                            <td>${v.gender}</td>
+                            <td>
+                                <button class="detailbtn" data-id=${i}>detail</button>
+                            </td>        
                         </tr>`
+            })
+            $("tbody").html(data)
+            $(".detailbtn").on("click",function(){
+                var id = $(this).data("id");
+                var name = student[id].name
+                var age = student[id].age
+                var gender = student[id].gender
+                alert(`${name} is ${age} year old `)
             })
         })
     </script>
 </head>
 <body>
-    <table>
+    <table border="1" cellspacing="0" cellpadding="10">
         <thead>
             <tr>
                 <th>No</th>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Gender</th>
+                <th>Action</th>
             
             </tr>
             <tbody>
