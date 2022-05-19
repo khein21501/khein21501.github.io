@@ -453,7 +453,7 @@ body.clinic_version .section {
     color: #ffffff;
     padding: 12px 0 12px;
     margin: 0;
-    background: #157fda;
+    background: #064184;
     text-align: center;
 }
 hr.hr1 {
@@ -1444,6 +1444,7 @@ nav.main-menu .navbar-toggle {border: solid #fff 2px;}
   .image_text p{
       padding: 10px;
   }
+
 
   
  
