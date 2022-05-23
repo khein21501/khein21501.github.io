@@ -1,0 +1,26 @@
+/*design for navbar*/
+.nav_bar {
+    float: right;
+}
+body {
+    background: #f4c2c2;
+}
+
+.nav_bar li{
+    margin: 20px;
+    
+}
+.nav_bar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-right: 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+
+.navbar-brand img{
+    margin-top: 20px;
+    padding: 3px;
+}
