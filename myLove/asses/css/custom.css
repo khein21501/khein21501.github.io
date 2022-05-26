@@ -1,0 +1,55 @@
+/*font*/
+@font-face {
+    font-family: mylove_reg;
+    src: url(../Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: mylove_bold;
+    src: url(../Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+}
+
+/*all of design*/
+
+
+/*color*/
+.maincolor{
+    color: black;
+}
+.customcolor{
+    color: white;
+}
+/*color end*/
+
+/*nav bar and nav button*/
+.rounded-pill{
+    border-radius: 50%;
+}
+.bg_navcolor{
+    background-color: #f4c2c2;
+}
+/*nav bar and nav button end*/
+nav a img{
+    border-radius: 50%;
+}
+
+nav a h3{
+    font-family: mylove_bold;
+}
+
+/*nav link*/
+.navbar-nav{
+    float: right;
+}
+
+.nav-item a{
+    color: white;
+    font-family: mylove_reg;
+   
+}
+
+.nav-item a:hover{
+   
+    border-bottom: 1px solid white ;
+    color: white;
+    
+}
