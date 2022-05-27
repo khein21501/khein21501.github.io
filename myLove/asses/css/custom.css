@@ -20,42 +20,30 @@
     color: black;
 }
 .customcolor{
-    color: white;
+    background-color: #f4c2c2;
 }
-/*color end*/
-body{
-    min-width: 100vh;
-    background-color:white;
+nav img{
+    width: 100px;
+    height: 80px;
 }
 /*nav bar and nav button*/
-.rounded-pill{
-    border-radius: 50%;
-}
+
 
 /*nav bar and nav button end*/
-nav a img{
+nav img{
     border-radius: 50%;
     border: 5px solid white;
 }
-nav a h3{
+nav a {
     font-family: mylove_i;
 }
 
 
 /*nav link*/
-.navbar{
-    width: 250px;
-    height: 100vh;
-    position: fixed; 
-    background-color: #f4c2c2;
-}
+
 
 .nav-link{
-    font-size: 1.25em;
     font-family: mylove_reg;
-    text-align: center;
-    padding: 25px;
-    
 }
 .nav-link:hover{
     text-decoration: underline;  
