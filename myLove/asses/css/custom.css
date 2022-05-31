@@ -43,8 +43,12 @@ nav a {
     font-family: mylove_reg;
 }
 .nav-link:hover{
-    text-decoration: underline;  
+    text-decoration: underline white;  
 }
 
+/* Home design */
+.nav-item {
+    background-color: #f4c2c2;
+}
 
 
