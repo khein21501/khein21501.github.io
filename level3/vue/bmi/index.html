@@ -13,10 +13,13 @@
     <script src="bs/js/bootstrap.min.js"></script>
     <!--custom js-->
     <script src="bs/js/custom.js"></script>
+    <!--vue-->
+    <script src="https://unpkg.com/vue@3"></script>
+    
 </head>
 <body>
     <!--input form-->
-    <div class="container-fluid mt-5 shadow p-3 mb-5 bg-body rounded" style="width: 500px;">
+    <div class="container-fluid mt-5 shadow p-3 mb-5 bg-body rounded" style="width: 500px;" id="app">
         <div class="card p-3 " style="border: 0;">
             <div class="card-body">
                 <h5 class="text-center">BMI Calculater</h5>
@@ -24,17 +27,17 @@
                 <div class="row">
                     <p class="card-text mt-3">Please Enter Your Height</p>
                     <div class="col">
-                        <input type="text" class="form-control input_de" placeholder="Feet" aria-label="First name">
+                        <input type="text" class="form-control input_de" placeholder="Feet" aria-label="First name" v-model="feet">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Inches" aria-label="Last name">
+                        <input type="text" class="form-control" placeholder="Inches" aria-label="Last name" v-model="inches">
                     </div>
                 </div>
 
                 <div class="row">
                     <p class="card-text mt-3">Please Enter Your Weight</p>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Poung" aria-label="First name">
+                        <input type="text" class="form-control" placeholder="Poung" aria-label="First name" v-model="paung">
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -67,5 +70,29 @@
             </div>
         </div>
     </div>
+    <script>
+        const { createApp } = Vue
+      
+        createApp({
+          data:{
+            
+              feet:null,
+              inches:null,
+              paung:null
+            },
+            computed: {
+              bmiCalculation: function(){
+                  var feet = parseInt(this.feet);
+                  var inches=parseInt(this.inches);
+                  var weight = parseInt(this.paung);
+                  
+                  
+              }
+            }
+          }
+        }).mount('#app')
+      </script>
+    
+        
 </body>
 </html>
