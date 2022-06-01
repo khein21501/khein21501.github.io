@@ -15,6 +15,25 @@
     <script src="bs/js/custom.js"></script>
     <!--vue-->
     <script src="https://unpkg.com/vue@3"></script>
+    <!--vue app-->
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return{
+                    feet:"",
+                    inches:"",
+                    paung:"",
+                    result:"",
+                }
+            },
+            method:{
+                bmi(){
+                    var inches = number(this.feet*12 + this.innches)
+                    this.result = number(703*this.paung(inches*inches));
+                }
+            }
+        })
+    </script>
     
 </head>
 <body>
@@ -27,22 +46,22 @@
                 <div class="row">
                     <p class="card-text mt-3">Please Enter Your Height</p>
                     <div class="col">
-                        <input type="text" class="form-control input_de" placeholder="Feet" aria-label="First name" v-model="feet">
+                        <input type="number" class="form-control input_de" placeholder="Feet" aria-label="First name" v-model="feet">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Inches" aria-label="Last name" v-model="inches">
+                        <input type="number" class="form-control" placeholder="Inches" aria-label="Last name" v-model="inches">
                     </div>
                 </div>
 
                 <div class="row">
                     <p class="card-text mt-3">Please Enter Your Weight</p>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Poung" aria-label="First name" v-model="paung">
+                        <input type="number" class="form-control" placeholder="Poung" aria-label="First name" v-model="paung">
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col">
-                        <button type="button" class="btn  button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button @click="bmi" type="button" class="btn button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Generate
                         </button>
                         <!-- Modal -->
@@ -54,7 +73,7 @@
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             <div class="modal-body">
-                                <h1>Kyaw Htin</h1>
+                                <h1>Your BMI is {{result}}</h1>
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary button_sec" data-bs-dismiss="modal">Close</button>
@@ -67,31 +86,12 @@
     </div>
 
 
-            </div>
-        </div>
-    </div>
-    <script>
-        const { createApp } = Vue
-      
-        createApp({
-          data:{
             
-              feet:null,
-              inches:null,
-              paung:null
-            },
-            computed: {
-              bmiCalculation: function(){
-                  var feet = parseInt(this.feet);
-                  var inches=parseInt(this.inches);
-                  var weight = parseInt(this.paung);
-                  
-                  
-              }
-            }
-          }
-        }).mount('#app')
-      </script>
+    
+      
+        
+          
+
     
         
 </body>
