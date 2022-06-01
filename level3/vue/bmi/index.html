@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE BMI</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="bs/css/custom.css">
+    <!--bootstrap js-->
+    <script src="bs/js/bootstrap.min.js"></script>
+    <!--custom js-->
+    <script src="bs/js/custom.js"></script>
+</head>
+<body>
+    <!--input form-->
+    <div class="container-fluid mt-5 shadow p-3 mb-5 bg-body rounded" style="width: 500px;">
+        <div class="card p-3 " style="border: 0;">
+            <div class="card-body">
+                <h5 class="text-center">BMI Calculater</h5>
+                  
+                <div class="row">
+                    <p class="card-text mt-3">Please Enter Your Height</p>
+                    <div class="col">
+                        <input type="text" class="form-control input_de" placeholder="Feet" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Inches" aria-label="Last name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p class="card-text mt-3">Please Enter Your Weight</p>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Poung" aria-label="First name">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button type="button" class="btn  button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Generate
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal">BMI Result</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            <div class="modal-body">
+                                <h1>Kyaw Htin</h1>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary button_sec" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
