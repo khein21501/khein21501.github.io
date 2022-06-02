@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return{
+                    memes:[],
+                }
+            },
+            methods:{
+                getMemes(){
+                    axios.get('https://api.imgflip.com/get_memes')
+                        .then(reponse => {
+                            console.log(response.data)
+                            if(response.data.success == true){
+                                this.memes = reponse.data.data.memes
+                            }
+                        })
+                        .catch(err => {
+                            console.log(err)
+                        })
+                }
+            },
+            mounted(){
+                this.getMemes();
+            }
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
