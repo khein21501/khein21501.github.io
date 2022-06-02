@@ -28,8 +28,12 @@
             },
             method:{
                 bmi(){
-                    var inches = number(this.feet*12 + this.innches)
-                    this.result = number(703*this.paung(inches*inches));
+                    var feet = this.feet;
+                    var inches = this.inches;
+                    var height = feet*12+inches;
+                    var weight = this.paung;
+                    this.result = number((weight/(height*height))*703);
+                
                 }
             }
         })
@@ -46,22 +50,22 @@
                 <div class="row">
                     <p class="card-text mt-3">Please Enter Your Height</p>
                     <div class="col">
-                        <input type="number" class="form-control input_de" placeholder="Feet" aria-label="First name" v-model="feet">
+                        <input type="text" class="form-control " placeholder="Feet" aria-label="First name" v-model.number="feet">
                     </div>
                     <div class="col">
-                        <input type="number" class="form-control" placeholder="Inches" aria-label="Last name" v-model="inches">
+                        <input type="text" class="form-control" placeholder="Inches" aria-label="Last name" v-model.number="inches">
                     </div>
                 </div>
 
                 <div class="row">
                     <p class="card-text mt-3">Please Enter Your Weight</p>
                     <div class="col">
-                        <input type="number" class="form-control" placeholder="Poung" aria-label="First name" v-model="paung">
+                        <input type="text" class="form-control" placeholder="Paung" aria-label="First name" v-model.number="paung">
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col">
-                        <button @click="bmi" type="button" class="btn button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button v-on:click="bmi" type="button" class="btn button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Generate
                         </button>
                         <!-- Modal -->
