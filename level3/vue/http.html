@@ -39,7 +39,7 @@
 <body>
 
     <div id="app">
-        <button type="button" @click="getMemes">Get Memes</button> -->
+        <button type="button" @click="getMemes">Get Memes</button> 
         <div v-if="memes.length > 0">
             <span v-for="meme in memes">
                 <img :src="meme.url" :alt="meme.name">
