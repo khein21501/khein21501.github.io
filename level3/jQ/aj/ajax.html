@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <!--jq-->
+    <script src="jquery.min.js"></script>
+    <script>
+        $(function(){
+            // $.ajax({
+            //     url: "https://api.imgflip.com/get_memes",
+            // // data: {
+            // //     id:123
+            // // },
+            // type:"GET",
+            // dataType :"json",
+
+            // })
+            // .done(function(json){
+            //     console.log(json)
+            // })
+            $.get("https://api.imgflip.com/get_memes",function(resp){
+                console.log(resp.data.memes)
+            })
+
+             
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
