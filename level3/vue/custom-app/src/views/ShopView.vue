@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>Contact page</h2>
+        <h2>Shop Page</h2>
         <PartFile></PartFile>
     </div>
 </template>
@@ -8,7 +8,7 @@
     import PartFile from '@/components/PartFile.vue'
 
     export default {
-        name: 'ContectView',
+        name: 'ShopView',
         components:{
             PartFile,
         }

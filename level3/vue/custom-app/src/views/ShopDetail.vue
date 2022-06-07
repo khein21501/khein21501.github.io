@@ -1,14 +1,14 @@
 <template>
     <div>
-        <h2>Contact page</h2>
-        <PartFile></PartFile>
+        <h2>Shop Detail Page</h2>
+        
     </div>
 </template>
 <script>
     import PartFile from '@/components/PartFile.vue'
 
     export default {
-        name: 'ContectView',
+        name: 'ShopDetail',
         components:{
             PartFile,
         }
