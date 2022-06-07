@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router' 
 import HomeView from '../views/HomeView.vue'
 import ContectView from "../views/ContectView.vue"
 import ShopView from "../views/ShopView.vue"
@@ -24,16 +24,17 @@ const routes = [
     component: ContectView
   },
   {
-    path: '/shop',
+    path:'/shop',
     name: 'shop',
-    component: ShopView
+    component:ShopView
   },
   {
-    path: '/detail:id',
+    path: '/detail/:id',
     name: 'shopdetail',
     component: ShopDetail
 
   }
+
 
 ]
 

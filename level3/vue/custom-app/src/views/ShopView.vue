@@ -1,16 +1,12 @@
 <template>
     <div>
         <h2>Shop Page</h2>
-        <PartFile></PartFile>
+        <p><router-link :to="{ name: 'shopdetail', params: { id:1 }}">
+            Item one
+        </router-link></p>
+        <p><router-link :to="{ name: 'shopdetail', params: { id:2 }}">
+            item two
+</router-link></p>
+        
     </div>
 </template>
-<script>
-    import PartFile from '@/components/PartFile.vue'
-
-    export default {
-        name: 'ShopView',
-        components:{
-            PartFile,
-        }
-    }
-</script>

@@ -1,16 +1,16 @@
 <template>
     <div>
-        <h2>Shop Detail Page</h2>
+        <h2>This is shop detail page for Item{{this.$rout.params.id}}</h2>
         
     </div>
 </template>
 <script>
-    import PartFile from '@/components/PartFile.vue'
+export default {
+    name:'ShopDetail',
+    data(){
+        return{
 
-    export default {
-        name: 'ShopDetail',
-        components:{
-            PartFile,
         }
     }
+}
 </script>
