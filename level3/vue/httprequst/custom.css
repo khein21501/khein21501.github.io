@@ -1,6 +1,7 @@
-.khh {
-    display: inherit;
-    margin: 3px;
-    
 
+.khh {
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    
 }
