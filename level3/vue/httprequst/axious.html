@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>AXIOS</title>
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return{
+                    memes : [],
+                }
+            },
+            methods:{
+                getMemes(){
+                    axios.get('https://api.imgflip.com/get_memes')
+                        .then(response=> {
+                        
+                        console.log(response.data);
+                        if (response.data.success == true) {
+                                this.memes = response.data.data.memes;
+                            }
+                        
+                       
+                    })
+                    .catch(function (error) {
+                         // handle error
+                        console.log(error);
+                    })
+                    
+                }
+                
+            },
+            mounted(){
+                this.getMemes()
+            },
+           
+        })
+    </script>
+    
+
+</head>
+<body>
+    <div class="container" id="app">
+        <h1 class="text-center m-5">Memes Generator</h1>
+        <div class="row " style="overflow-x: auto;" >
+            <div class="col-sm-12" v-for="meme in memes">
+                <span v-if="memes.length>0">
+                    <img :src="meme.url" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <script>
+        const mountedApp = app.mount("#app")
+    </script>
+</body>
+</html>
