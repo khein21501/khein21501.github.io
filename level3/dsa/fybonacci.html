@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcuate Fybonacci</h1>
+    <script>
+        let frist_term = 0
+        let second_term = 1
+        let temp  = 0
+        document.write(frist_term,',',second_term)
+        while(second_term<=1000){
+            temp = second_term
+            second_term = second_term+frist_term
+            frist_term=temp
+            if(second_term<=1000){
+                document.write(',',second_term)
+            }
+        }
+    </script>
+</body>
+</html>
