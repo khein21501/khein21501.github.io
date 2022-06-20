@@ -882,7 +882,7 @@ body.clinic_version .footer .widget-title h3 {
 .footer-info p {
     padding-left: 40px;
 }
-.newsletter-form input {
+/* .newsletter-form input {
     display: inline-block;
     height: 50px;
     width: 80%;
@@ -892,8 +892,8 @@ body.clinic_version .footer .widget-title h3 {
     border-radius: 0;
     border: none;
     box-shadow: none;
-}
-.newsletter-form .mc-submit {
+} */
+/* .newsletter-form .mc-submit {
     height: 50px;
     width: 20%;
     font-weight: bold;
@@ -905,7 +905,7 @@ body.clinic_version .footer .widget-title h3 {
     display: inline-block;
     float: left;
     text-align: center;
-}
+} */
 .newsletter-form .mc-submit:hover,.newsletter-form .mc-submit:focus {
     background: linear-gradient(to right, #fe000c 0%, #064184 100%);
 }
