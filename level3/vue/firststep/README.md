@@ -1,4 +1,4 @@
-# my-project
+# firststep
 
 ## Project setup
 ```
