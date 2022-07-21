@@ -1,0 +1,27 @@
+html{
+    
+    box-sizing: border-box;
+}
+.button_ge{
+    background-color: pink;
+    border: 1px solid white;
+    color: white;
+}
+.button_ge:hover{
+    background-color: white;
+    color: pink;
+    border: 1px solid pink;
+}
+
+.button_sec{
+    color: pink;
+    border: 1px solid pink;
+}
+.button_sec:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: pink;
+}
+.input_de::before{
+    box-shadow: pink;
+}

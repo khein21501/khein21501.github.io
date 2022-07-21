@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VUE BMI</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <!--custom css-->
+    <link rel="stylesheet" href="bs/css/custom.css">
+    <!--bootstrap js-->
+    <script src="bs/js/bootstrap.min.js"></script>
+    <!--custom js-->
+    <script src="bs/js/custom.js"></script>
+    <!--vue-->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!--vue app-->
+    <script>
+        const app = Vue.createApp({
+            data(){
+                return{
+                    feet:"",
+                    inches:"",
+                    paung:"",
+                    result:"",
+                }
+            },
+            methods:{
+                bmi(){
+                    var feet = this.feet;
+                    var inches = this.inches;
+                    var height = feet*12+inches;
+                    var weight = this.paung;
+                    this.result =  parseInt((weight * 703) / (height * height));
+                    
+                
+                }
+            }
+        })
+    </script>
+    
+</head>
+<body>
+    <!--input form-->
+    <div class="container-fluid mt-5 shadow p-3 mb-5 bg-body rounded" style="width: 500px;" id="app">
+        <div class="card p-3 " style="border: 0;">
+            <div class="card-body">
+                <!-- <h5 class="text-center">BMI Calculater</h5>
+                  
+                <div class="row">
+                    <p class="card-text mt-3">Please Enter Your Height</p>
+                    <div class="col">
+                        <input type="number" class="form-control " placeholder="Feet" aria-label="First name" v-model.number="feet">
+                    </div>
+                    <div class="col">
+                        <input type="number" class="form-control" placeholder="Inches" aria-label="Last name" v-model.number="inches">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p class="card-text mt-3">Please Enter Your Weight</p>
+                    <div class="col">
+                        <input type="number" class="form-control" placeholder="Paung" aria-label="First name" v-model.number="paung">
+                    </div>
+                </div>
+                 -->
+                
+                <div class="row">
+                    <div class="col">
+                        <button  v-on:click="bmi" type="button" class="btn button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Click Here 
+                        </button>
+                        
+                        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            <div class="modal-body">
+                                
+                                <div>
+                                    
+                                    <h2 style="color: pink;">Love You So Much &#10084;Bae </h2>    
+                                </div>
+                                <!-- <div v-else-if="result>18 && result<25">
+                                    <h3>Your Bmi Result is {{result}}</h3>
+                                    <h2 style="color:green">Normal Weight</h2>
+                                </div>
+                                <div v-else-if="result>25 && result<29">
+                                    <h3>Your Bmi Result is {{result}}</h3>
+                                    <h2 style="color: orange;">Over Weight</h2>
+                                </div>
+                                <div v-else-if="result>30">
+                                    <h3>Your Bmi Result is {{result}}</h3>
+                                    <h2 style="color:red">Obesity</h2>
+                                </div> -->
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary button_sec" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+                        
+        </div>
+    </div>
+
+
+            
+    
+      
+        
+          
+
+
+<script>
+    const mountApp = app.mount("#app")
+</script>        
+</body>
+</html>
