@@ -46,7 +46,7 @@
     <div class="container-fluid mt-5 shadow p-3 mb-5 bg-body rounded" style="width: 500px;" id="app">
         <div class="card p-3 " style="border: 0;">
             <div class="card-body">
-                <h5 class="text-center">BMI Calculater</h5>
+                <!-- <h5 class="text-center">BMI Calculater</h5>
                   
                 <div class="row">
                     <p class="card-text mt-3">Please Enter Your Height</p>
@@ -64,28 +64,28 @@
                         <input type="number" class="form-control" placeholder="Paung" aria-label="First name" v-model.number="paung">
                     </div>
                 </div>
+                 -->
                 
-                
-                <div class="row mt-4">
+                <div class="row">
                     <div class="col">
-                        <button v-on:click="bmi" type="button" class="btn button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Generate
+                        <button  v-on:click="bmi" type="button" class="btn button_ge" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Click Here 
                         </button>
                         
                         <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModal">BMI Result</h5>
+                                    <h5 class="modal-title" id="exampleModal"></h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             <div class="modal-body">
                                 
-                                <div v-if="result<18">
-                                    <h3>Your Bmi Result is {{result}}</h3>
-                                    <h2 style="color: blue;">Under Weight</h2>    
+                                <div>
+                                    
+                                    <h2 style="color: pink;">Love You So Much &#10084;Bae </h2>    
                                 </div>
-                                <div v-else-if="result>18 && result<25">
+                                <!-- <div v-else-if="result>18 && result<25">
                                     <h3>Your Bmi Result is {{result}}</h3>
                                     <h2 style="color:green">Normal Weight</h2>
                                 </div>
@@ -96,7 +96,7 @@
                                 <div v-else-if="result>30">
                                     <h3>Your Bmi Result is {{result}}</h3>
                                     <h2 style="color:red">Obesity</h2>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary button_sec" data-bs-dismiss="modal">Close</button>
